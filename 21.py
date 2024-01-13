@@ -1,0 +1,8 @@
+n=int(input())
+w=(n%(24*60*60))
+q=str(w)
+e=str(w%60)
+r=str((w//60)%60)
+t=w//(60*60)
+a=str('0')
+print(t, (a+r+a)[-3:-1], (a+e+a)[-3:-1], sep=':')
